@@ -11,7 +11,7 @@ from rdkit.Chem import AllChem
 model = joblib.load("model.pkl")
 
 # Streamlit page settings
-st.set_page_config(page_title="ParkiC50", layout="wide")
+st.set_page_config(page_title="ColoReactor", layout="wide")
 
 # Function to generate Morgan fingerprints
 def smiles_to_morgan_fp(smiles, radius=2, nBits=2048):
@@ -46,14 +46,14 @@ def get_download_link(df):
 # Main Streamlit app
 def main():
     # Load and display image
-    st.image("2427039e-791d-409b-9026-481140c81f5e.png", use_column_width=True)
+    st.image("pic.png", use_column_width=True)
 
     # Title and subtitle
-    st.markdown("<h1 style='text-align: center; color: #8E44AD;'>🧠 ParkiC50</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center; color: #8E44AD;'>Coloreactor</h1>", unsafe_allow_html=True)
     st.markdown(
         "<p style='text-align: center; font-size:18px;'>"
         "AI-powered prediction of <b>pIC₅₀</b> values and bioactivity classification for "
-        "<b>Protein Kinase C</b> targeting drug candidates in humans against Parkinson's Disease."
+        "<b> drugs candidates</b> targeting biomarker genes in humans against Colorectal Cancer."
         "</p>", 
         unsafe_allow_html=True
     )
@@ -88,10 +88,10 @@ def main():
                 st.error(f"❌ Error: {e}")
 
     st.markdown("---")
-    st.subheader("👨‍🔬 ParkiC50 Development Team")
+    st.subheader("Coloreactor Developers:")
 
     # Developer profiles
-    col1, col2, col3, col4 = st.columns(4)
+    col1, col2, col3 = st.columns(3)
 
     with col1:
         st.markdown("""
@@ -108,6 +108,17 @@ def main():
     with col2:
         st.markdown("""
             <div style='line-height: 1.6; text-align: center;'>
+                <h4 style='color:#8E44AD;'>Dr. Haseeb Nisar</h4>
+                Post-Doctoral Researcher<br>
+                Interdisciplinary Research Centre for Finance and Digital Economy<br>
+                King Fahad University of Petroleum and Minerals, Saudi Arabia<br>
+                <b>Email:</b><br>haseeb.nisar@kfupm.edu.sa
+            </div>
+        """, unsafe_allow_html=True)
+
+    with col3:
+        st.markdown("""
+             <div style='line-height: 1.6; text-align: center;'>
                 <h4 style='color:#8E44AD;'>Shumaila Shahid</h4>
                 MS Biochemistry<br>
                 School of Biochemistry and Biotechnology,<br>
@@ -115,26 +126,7 @@ def main():
                 <b>Email:</b><br>shumaila.ms.sbb@pu.edu.pk
             </div>
         """, unsafe_allow_html=True)
-
-    with col3:
-        st.markdown("""
-            <div style='line-height: 1.6; text-align: center;'>
-                <h4 style='color:#8E44AD;'>Fajar Abbas</h4>
-                School of Biochemistry and Biotechnology,<br>
-                University of the Punjab, Lahore<br>
-                <b>Email:</b><br>fajarabbas433@gmail.com
-            </div>
-        """, unsafe_allow_html=True)
-
-    with col4:
-        st.markdown("""
-            <div style='line-height: 1.6; text-align: center;'>
-                <h4 style='color:#8E44AD;'>Saher Abbas</h4>
-                School of Biochemistry and Biotechnology,<br>
-                University of the Punjab, Lahore<br>
-                <b>Email:</b><br>saherabbas272004@gmail.com
-            </div>
-        """, unsafe_allow_html=True)
+  
 
 if __name__ == "__main__":
     main()
