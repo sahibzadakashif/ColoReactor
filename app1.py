@@ -100,8 +100,9 @@ def main():
             except Exception as e:
                 st.error(f"❌ Error: {e}")
 
-    st.markdown("---")
-    st.subheader("Coloreactor Developers:")
+  st.markdown("---")
+  st.markdown('<h4 style="color:#8E44AD;"><b>Coloreactor Developers:</b></h4>', unsafe_allow_html=True)
+
 
     # Developer profiles
     col1, col2, col3 = st.columns(3)
