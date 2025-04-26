@@ -45,24 +45,16 @@ def get_download_link(df):
 
 # Main Streamlit app
 def main():
-    # Title and description
-    st.markdown("<h1 style='text-align: center; color: #8E44AD; font-size: 40px;'>Coloreactor</h1>", unsafe_allow_html=True)
+    # Load and display image
+    st.image("pic.png", use_column_width=True)
+
+    # Title and subtitle
+    st.markdown("<h1 style='text-align: center; color: #8E44AD;'>Coloreactor</h1>", unsafe_allow_html=True)
     st.markdown(
         "<p style='text-align: center; font-size:18px;'>"
         "AI-powered prediction of <b>pIC₅₀</b> values and bioactivity classification for "
-        "<b>drugs candidates</b> targeting biomarker genes in humans against Colorectal Cancer."
-        "</p>",
-        unsafe_allow_html=True
-    )
-
-    # Load and display image in the center
-    st.markdown(
-        """
-        <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
-            <img src="https://raw.githubusercontent.com/yourusername/yourrepo/main/703b1433-27f0-43b7-b114-f52d33a6e73d.png" 
-            alt="Coloreactor Image" style="height:700px; width:300px; object-fit:contain;">
-        </div>
-        """,
+        "<b> drugs candidates</b> targeting biomarker genes in humans against Colorectal Cancer."
+        "</p>", 
         unsafe_allow_html=True
     )
 
@@ -134,7 +126,7 @@ def main():
                 <b>Email:</b><br>shumaila.ms.sbb@pu.edu.pk
             </div>
         """, unsafe_allow_html=True)
+  
 
 if __name__ == "__main__":
-    main()
-
+    main() 
