@@ -108,7 +108,7 @@ def main():
 
     with col1:
         st.markdown("""
-            <div style='line-height: 1.6; text-align: center;'>
+            <div style='line-height: 1.6;'>
                 <h4 style='color:#8E44AD;'>Dr. Kashif Iqbal Sahibzada</h4>
                 Assistant Professor<br>
                 Department of Health Professional Technologies,<br>
@@ -120,7 +120,7 @@ def main():
 
     with col2:
         st.markdown("""
-            <div style='line-height: 1.6; text-align: center;'>
+            <div style='line-height: 1.6;'>
                 <h4 style='color:#8E44AD;'>Dr. Haseeb Nisar</h4>
                 Post-Doctoral Researcher<br>
                 Interdisciplinary Research Centre for Finance and Digital Economy<br>
@@ -131,7 +131,7 @@ def main():
 
     with col3:
         st.markdown("""
-             <div style='line-height: 1.6; text-align: center;'>
+             <div style='line-height: 1.6;'>
                 <h4 style='color:#8E44AD;'>Shumaila Shahid</h4>
                 MS Biochemistry<br>
                 School of Biochemistry and Biotechnology,<br>
