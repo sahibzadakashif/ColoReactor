@@ -44,6 +44,8 @@ def get_download_link(df):
     return f'<a href="data:file/csv;base64,{b64}" download="predictions.csv">📥 Download CSV</a>'
 
 # Main Streamlit app
+import streamlit as st
+
 def main():
     # Title and subtitle
     st.markdown("<h1 style='text-align: center; color: #8E44AD;'>Coloreactor</h1>", unsafe_allow_html=True)
@@ -58,15 +60,14 @@ def main():
     # Spacer
     st.markdown("<br>", unsafe_allow_html=True)
 
-    # Centered image using HTML
-    st.markdown(
-        """
-        <div style='text-align: center;'>
-            <img src='image1.png' style='width: 80%;'/>
-        </div>
-        """,
-        unsafe_allow_html=True
-    )
+    # Center the image
+    col1, col2, col3 = st.columns([1, 2, 1])
+    with col1:
+        st.empty()
+    with col2:
+        st.image("image1.png", use_column_width=True)
+    with col3:
+        st.empty()
 
     st.markdown("---")
     st.subheader("🔬 Sequence Submission")
