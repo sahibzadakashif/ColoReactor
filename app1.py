@@ -49,14 +49,17 @@ import streamlit as st
 def main():
     # Title and subtitle
     st.markdown("<h1 style='text-align: center; color: #8E44AD;'>Coloreactor-Revolutionizing Colorectal Cancer Therapeutics with AI</h1>", unsafe_allow_html=True)
-    st.markdown(
-        "<p style='text-align: center; font-size:18px;'>"
-        "Welcome to ColoReactor, a next-generation prediction server designed to fast-track drug discovery efforts against Colorectal Cancer. Powered by an advanced AI-based Random Forest Regressor boasting an impressive 94% prediction accuracy, ColoReactor accurately predicts pIC₅₀ values and classifies the bioactivity of novel drug candidates targeting crucial human biomarker genes.
+  st.markdown(
+    """
+    <p style='text-align: center; font-size:18px;'>
+    Welcome to <strong>ColoReactor</strong>, a next-generation prediction server designed to fast-track drug discovery efforts against <strong>Colorectal Cancer</strong>. Powered by an advanced <em>AI-based Random Forest Regressor</em> boasting an impressive <strong>94% prediction accuracy</strong>, ColoReactor accurately predicts <strong>pIC₅₀ values</strong> and classifies the <strong>bioactivity</strong> of novel drug candidates targeting crucial human biomarker genes.<br><br>
+    
+    Merging the strengths of computational intelligence with deep biological insight, ColoReactor equips researchers to decode subtle molecular interactions and unlock therapeutic potential. Join us in advancing the frontier of Colorectal Cancer treatment—where precision, innovation, and AI-driven discovery converge.
+    </p>
+    """,
+    unsafe_allow_html=True
+)
 
-Merging the strengths of computational intelligence with deep biological insight, ColoReactor equips researchers to decode subtle molecular interactions and unlock therapeutic potential. Join us in advancing the frontier of Colorectal Cancer treatment—where precision, innovation, and AI-driven discovery converge."
-        "</p>", 
-        unsafe_allow_html=True
-    )
 
     # Spacer
     st.markdown("<br>", unsafe_allow_html=True)
