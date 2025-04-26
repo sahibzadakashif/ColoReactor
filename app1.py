@@ -114,9 +114,7 @@ with col1:
             Department of Health Professional Technologies,<br>
             The University of Lahore<br>
             Post-Doctoral Fellow, Henan University of Technology, China<br>
-            <b>Email:</b><br>
-            kashif.iqbal@dhpt.uol.edu.pk<br>
-            kashif.iqbal@haut.edu.cn
+            <b>Email:</b><br>kashif.iqbal@dhpt.uol.edu.pk<br>kashif.iqbal@haut.edu.cn
         </div>
     """, unsafe_allow_html=True)
 
@@ -127,24 +125,19 @@ with col2:
             Post-Doctoral Researcher<br>
             Interdisciplinary Research Centre for Finance and Digital Economy<br>
             King Fahad University of Petroleum and Minerals, Saudi Arabia<br>
-            <b>Email:</b><br>
-            haseeb.nisar@kfupm.edu.sa
+            <b>Email:</b><br>haseeb.nisar@kfupm.edu.sa
         </div>
     """, unsafe_allow_html=True)
 
 with col3:
     st.markdown("""
-        <div style='line-height: 1.6;'>
+         <div style='line-height: 1.6;'>
             <h4 style='color:#8E44AD;'>Shumaila Shahid</h4>
             MS Biochemistry<br>
             School of Biochemistry and Biotechnology,<br>
             University of the Punjab, Lahore<br>
-            <b>Email:</b><br>
-            shumaila.ms.sbb@pu.edu.pk
+            <b>Email:</b><br>shumaila.ms.sbb@pu.edu.pk
         </div>
-    """, unsafe_allow_html=True)
-
-  
-
+    """, unsafe_allow_html=True) 
 if __name__ == "__main__":
     main() 
