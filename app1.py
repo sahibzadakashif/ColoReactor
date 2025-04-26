@@ -45,18 +45,32 @@ def get_download_link(df):
 
 # Main Streamlit app
 def main():
-    # Load and display image
-    st.image("pic.png", use_column_width=True)
-
     # Title and subtitle
     st.markdown("<h1 style='text-align: center; color: #8E44AD;'>Coloreactor</h1>", unsafe_allow_html=True)
     st.markdown(
         "<p style='text-align: center; font-size:18px;'>"
         "AI-powered prediction of <b>pIC₅₀</b> values and bioactivity classification for "
-        "<b> drugs candidates</b> targeting biomarker genes in humans against Colorectal Cancer."
+        "<b>drugs candidates</b> targeting biomarker genes in humans against Colorectal Cancer."
         "</p>", 
         unsafe_allow_html=True
     )
+
+    # Spacer
+    st.markdown("<br>", unsafe_allow_html=True)
+
+    # Centered image using HTML
+    st.markdown(
+        """
+        <div style='text-align: center;'>
+            <img src='image1.png' style='width: 60%;'/>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
+if __name__ == "__main__":
+    main()
+
 
     st.markdown("---")
     st.subheader("🔬 Sequence Submission")
