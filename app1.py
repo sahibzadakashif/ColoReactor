@@ -141,15 +141,15 @@ def main():
         """, unsafe_allow_html=True)
     with col4:
     # st.image("teacher-photo.jpg", width=100)
-    st.markdown("""
-        <div style='line-height: 1.1;'>
-            <h3>Shumaila Shahid</h3>
-            MS Biochemistry<br>
-            School of Biochemistry and Biotechnology<br>
-            University of the Punjab<br>
-            Email: shumaila.ms.sbb@pu.edu.pk
-        </div>
-    """, unsafe_allow_html=True)
+        st.markdown("""
+             <div style='line-height: 1.6; text-align: center;'>
+                <h3>Shumaila Shahid</h3>
+                MS Biochemistry<br>
+                School of Biochemistry and Biotechnology<br>
+                University of the Punjab<br>
+                Email: shumaila.ms.sbb@pu.edu.pk
+             </div>
+        """, unsafe_allow_html=True)
 
 if __name__ == "__main__":
     main() 
