@@ -104,8 +104,8 @@ def main():
     st.subheader("Coloreactor Developers:")
 
     # Developer profiles
-    col1, col2, col3 = st.columns(3)
-
+    #col1, col2, col3 = st.columns(3)
+    col1, col2, col3, col4 = st.columns([1, 1, 1, 1])
     with col1:
         st.markdown("""
             <div style='line-height: 1.6; text-align: center;'>
@@ -139,6 +139,17 @@ def main():
                 <b>Email:</b><br>shumaila.ms.sbb@pu.edu.pk
             </div>
         """, unsafe_allow_html=True)
+    with col4:
+    # st.image("teacher-photo.jpg", width=100)
+    st.markdown("""
+        <div style='line-height: 1.1;'>
+            <h3>Shumaila Shahid</h3>
+            MS Biochemistry<br>
+            School of Biochemistry and Biotechnology<br>
+            University of the Punjab<br>
+            Email: shumaila.ms.sbb@pu.edu.pk
+        </div>
+    """, unsafe_allow_html=True)
 
 if __name__ == "__main__":
     main() 
