@@ -146,7 +146,7 @@ def main():
                 <h4 style='color:#8E44AD;'>Saleh Alwahaishi</h4>
                 KFUPM Business School<br>
                 King Fahad University of Petroleum and Minerals, Saudi Arabia<br>
-                <b>Email:</b><br>haseeb.nisar@kfupm.edu.sa
+                <b>Email:</b><br>salehw@kfupm.edu.sa
              </div>
         """, unsafe_allow_html=True)
 
