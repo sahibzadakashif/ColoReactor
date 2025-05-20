@@ -143,7 +143,7 @@ def main():
     # st.image("teacher-photo.jpg", width=100)
         st.markdown("""
              <div style='line-height: 1.6; text-align: center;'>
-                <h4 style='color:#8E44AD;'>Saleh Alwahaishi</h4>
+                <h4 style='color:#8E44AD;'>Dr. Saleh Alwahaishi</h4>
                 KFUPM Business School<br>
                 King Fahad University of Petroleum and Minerals, Saudi Arabia<br>
                 <b>Email:</b><br>salehw@kfupm.edu.sa
